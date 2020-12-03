@@ -1,3 +1,3 @@
 # dotfiles
 
-A repo containing my .vimrc and my bin.
+My .vimrc, .bashrc, and my bin!
