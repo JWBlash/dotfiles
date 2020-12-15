@@ -1,0 +1,25 @@
+#!/bin/bash
+
+echo 
+echo "+++ Depositing Dotfiles +++"
+echo
+
+for file in /README.md nonsense /.vimrc /.bash_aliases; do
+    if [ -e ../dotfiles/$file ]; then
+        echo $file
+        if [ -e "$HOME$file" ]; then
+            read -p "$HOME$file already exists -- Overwrite? [Y/N]: " OVERWRITE
+        fi
+        if [ $OVERWRITE == "Y" ]; then
+            echo "Overwriting!"
+        else
+            echo "Not overwriting."
+            echo "Exiting."
+            exit 0;
+        fi
+    fi
+done
+
+echo
+echo "+++ Done! +++"
+echo
