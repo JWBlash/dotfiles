@@ -40,3 +40,10 @@ Plug 'airblade/vim-gitgutter'
 Plug 'stephpy/vim-yaml'
 
 call plug#end()
+
+" Start NERDTree
+autocmd VimEnter * NERDTree
+" Refocus the window
+autocmd VimEnter * wincmd p
+" Start Tagbar
+autocmd VimEnter * Tagbar
