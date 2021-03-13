@@ -14,3 +14,7 @@ alias lk="echo $PWD; ll"
 
 # +++ USABILITY +++
 alias weather="curl https://wttr.in/Natick"
+
+# +++ PICO +++
+alias deploy='sh ~/bin/deploy.sh'
+
